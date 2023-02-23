@@ -2,17 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
 /* CSS Preset */
-html,body {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
-}
+    box-sizing: border-box;
+  }
 
 /* Mobile first */
 body {
     font-family: 'Space Mono', monospace;
    
 }
-.container {
+ .container {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -20,9 +21,8 @@ body {
     align-items: center;
    
     max-width: 350px;
-    max-height: 750px;
-    
-    background-color: antiquewhite;
+    max-height: 950px;
+
     margin-top: 4em;
 }
 
@@ -35,23 +35,25 @@ body {
 
 .content {
     padding: 1.5em;
-    
+
 }
 
-.h1{
-    font-size: 4rem; /* 48px */
+h1{
+    font-size: 2rem; /* 36px */
     font-weight: 700;
     letter-spacing: -0.03rem;
-
+    margin-bottom: 1em;
 } 
- .p {
+ p {
     font-size: 1.125rem;
     line-height: 27px;
-  
+    margin-bottom: 2em;
+    font-weight: 400;
+    color: #4F4F4F;
 }
 .image {
     max-width: 300px;
-    max-height: 170px;
+    max-height: 238px;
     padding: 2em;
 }
 
@@ -63,43 +65,57 @@ body {
     text-transform: uppercase;
     border: none;
     font-family: inherit;
-} 
-/* 
-@media(max-width:900px ) {
+}  
 
-    .body{
-        display: flex;   
+
+@media(min-width:900px ) {
+
+    .container{
+         
         max-width: 1440px;
         max-height: 1020px;
-
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        text-align: center;
+        display: flex;
+        
        
     }
 
-    .content {
+    .main-div {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        
     }
 
-    .h1 {
+    h1 {
         max-width: 586px;
-        max-height: 190px;
+        min-height: 190px;
+        font-size: 4rem; /* 64px*/
     }
 
-    .p{
+    p{
 
         max-width: 381px;
-        max-height: 108px;
+        min-height: 108px;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color:#4F4F4F;
     }
 
+    .button{
+        width: 216px;
+        height: 68px;
+    }
 
     .image {
         max-width: 540px;
-        max-height: 414px;
+        max-height: 447px;
+        
     }
 
-} */
+    .title-div {
+         
+        width: 85%;
+      
+    }
+
+} 
