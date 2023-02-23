@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+/* CSS Preset */
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile first */
+body {
+    font-family: 'Space Mono', monospace;
+   
+}
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    max-width: 350px;
+    max-height: 750px;
+    
+    background-color: antiquewhite;
+    margin-top: 4em;
+}
+
+.title-div {
+    text-transform: uppercase;
+    text-align: left;
+    width: 100%; /* by default, flex is centering the title-div, so use width=100% to stretch the div */
+    margin-left: 2.4em;
+}
+
+.content {
+    padding: 1.5em;
+    
+}
+
+.h1{
+    font-size: 4rem; /* 48px */
+    font-weight: 700;
+    letter-spacing: -0.03rem;
+
+} 
+ .p {
+    font-size: 1.125rem;
+    line-height: 27px;
+  
+}
+.image {
+    max-width: 300px;
+    max-height: 170px;
+    padding: 2em;
+}
+
+.button {
+    font-size: 0.875rem;
+    padding: 1em 2em;
+    background-color: black;
+    color: whitesmoke;
+    text-transform: uppercase;
+    border: none;
+    font-family: inherit;
+} 
+/* 
+@media(max-width:900px ) {
+
+    .body{
+        display: flex;   
+        max-width: 1440px;
+        max-height: 1020px;
+
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+       
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h1 {
+        max-width: 586px;
+        max-height: 190px;
+    }
+
+    .p{
+
+        max-width: 381px;
+        max-height: 108px;
+    }
+
+
+    .image {
+        max-width: 540px;
+        max-height: 414px;
+    }
+
+} */
